@@ -94,7 +94,10 @@ public class MyBenchmark {
     }
 
 
-
+    /**
+     * Formally should be java implementation of quicksort.
+     * In fact assume vavr.List.sorted() uses in fact Stream.sorted() which finally uses kind of mergesort
+     */
     @Benchmark
     public void testVavrFast(MyState state, Blackhole blackhole) {
 
